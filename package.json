@@ -6,22 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "seed": "ts-node ./scripts/loadDb.ts",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.2.12",
+    "@ai-sdk/react": "^1.2.9",
+    "@datastax/astra-db-ts": "^1.5.0",
+    "@google/genai": "^0.9.0",
+    "@google/generative-ai": "^0.24.0",
+    "ai": "^4.3.9",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.1.36",
+    "next": "15.2.0",
+    "openai": "^4.86.1",
+    "puppeteer": "^19.11.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.0"
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
